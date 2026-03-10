@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>F1 Best Liveries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #111; color: #f0f0f0; }
+    .navbar { background-color: #e10600 !important; }
+    .nav-link { color: #fff !important; }
+    .card { background: #1e1e1e; border: 1px solid #333; color: #f0f0f0; }
+    .card img { height: 160px; object-fit: cover; }
+    .card-title { font-size: 0.9rem; font-weight: 700; margin-bottom: 2px; }
+    .card-text { font-size: 0.78rem; color: #aaa; }
+    .modal-content { background: #1e1e1e; color: #f0f0f0; border: 1px solid #e10600; }
+    .accordion-item { background: #1e1e1e; border-color: #333; color: #f0f0f0; }
+    .accordion-button { background: #1e1e1e !important; color: #f0f0f0 !important; }
+    .accordion-button:not(.collapsed) { color: #e10600 !important; box-shadow: none !important; }
+    .accordion-button::after { filter: invert(1); }
+    .accordion-body { background: #161616; color: #ccc; }
+    footer { background: #0a0a0a; border-top: 3px solid #e10600; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold" href="#">🏎 F1 LIVERIES</a>
+    <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-3">
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    🏁 The 8 most iconic F1 liveries ever made.
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
+  </div>
+</div>
+
+<div class="container text-center my-4">
+  <h1 class="fw-bold text-uppercase" style="letter-spacing:3px;">Greatest F1 Liveries</h1>
+  <p class="text-secondary">From JPS black gold to Marlboro red — paint schemes that defined motorsport.</p>
+  <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#introModal">About This Page</button>
+</div>
+
+<section id="gallery" class="container mb-5">
+  <div class="row g-3">
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100">
+        <img src="https://images.gptoday.info/x/artlg/5cab10025eba941f7a6d8a25cfd740eb5ee1aacdee898.webp" class="card-img-top" alt="Lotus 79 JPS">
+        <div class="card-body">
+          <h6 class="card-title">Lotus 98T</h6>
+          <p class="card-text">1986 · Black & Gold</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100">
+        <img src="https://static.wikia.nocookie.net/f1wikia/images/8/84/Ayrton_Senna_1988_Canada.jpg/revision/latest?cb=20121102005601" class="card-img-top" alt="McLaren MP4/4">
+        <div class="card-body">
+          <h6 class="card-title">McLaren MP4/4</h6>
+          <p class="card-text">1988 · Marlboro Red & White</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100">
+        <img src="https://www.motolegends.com/Images/contentarchive/Minichamps-1-18-Schumacher-1991-Belgian-GP-Jordan-1.jpg" class="card-img-top" alt="Jordan 191">
+        <div class="card-body">
+          <h6 class="card-title">Jordan 191</h6>
+          <p class="card-text">1991 · 7UP Emerald Green</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100">
+        <img src="https://formularapida.net/wp-content/uploads/2020/09/Ehy8rF3XkAEIQ8j.jpg" class="card-img-top" alt="Ferrari F2004">
+        <div class="card-body">
+          <h6 class="card-title">Ferrari F2004</h6>
+          <p class="card-text">2004 · Rosso Corsa</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100">
+        <img src="https://preview.redd.it/throwback-to-when-renault-was-by-far-the-sexiest-car-on-the-v0-2x4lzid3f3p21.jpg?auto=webp&s=334617c47464918e00d1cc82657c495019dcc8be" class="card-img-top" alt="Renault R26">
+        <div class="card-body">
+          <h6 class="card-title">Renault R26</h6>
+          <p class="card-text">2006 · Yellow & Blue</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/fe/53/94/fe5394708eac2ada8370370c77ec3beb.jpg" class="card-img-top" alt="Brawn BGP001">
+        <div class="card-body">
+          <h6 class="card-title">Brawn BGP001</h6>
+          <p class="card-text">2009 · White & Green</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100">
+        <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iAVZjFpbA40A/v1/-1x-1.webp" class="card-img-top" alt="Mercedes W10">
+        <div class="card-body">
+          <h6 class="card-title">Mercedes W10</h6>
+          <p class="card-text">2019 · Silver Arrows</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100">
+        <img src="https://www.f1-fansite.com/wp-content/uploads/2025/11/14-saturday-lusail-2025-4K.jpg" class="card-img-top" alt="Mercedes W11 Black">
+        <div class="card-body">
+          <h6 class="card-title">McLaren MCL39</h6>
+          <p class="card-text">2025 · Papaya Orange & Black</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="container mb-5">
+  <h4 class="fw-bold mb-3">FAQ</h4>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          What is the most iconic F1 livery?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">Probably the Marlboro McLaren driven by none other than Ayrton Senna.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+          Why is the 2025 McLaren included in your list?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">BECAUSE I'M BIASED. LEZGOOO!!! "LANDO, WE CAN BE WORLD CHAMPION I SAID"</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="introModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title text-danger">About This Page</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-secondary">
+        A curated gallery of the 8 greatest F1 liveries in history, selected based on design, cultural impact, and on-track success.
+      </div>
+      <div class="modal-footer border-secondary">
+        <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="text-center py-3 text-secondary">
+  <small>Special Mention: 2025 Williams Gulf Livery</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
