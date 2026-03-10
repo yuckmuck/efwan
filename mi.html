@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage Gallery | PURPLE GALLERY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --deep-purple: #1a0b2e;
+            --electric-purple: #9d50bb;
+            --soft-lavender: #e0c3fc;
+        }
+
+        body {
+            background-color: var(--deep-purple);
+            color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* 1. Component Style: Custom Glass Navbar */
+        .navbar-purple {
+            background: rgba(26, 11, 46, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(157, 80, 187, 0.3);
+        }
+
+        /* Card Styling */
+        .purple-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(157, 80, 187, 0.2);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .purple-card:hover {
+            border-color: var(--electric-purple);
+            box-shadow: 0 0 20px rgba(157, 80, 187, 0.4);
+            transform: scale(1.02);
+        }
+
+        .gallery-img {
+            border-radius: 15px 15px 0 0;
+            height: 250px;
+            object-fit: cover;
+            opacity: 0.9;
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(45deg, #e0c3fc, #9d50bb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-purple {
+            background: linear-gradient(45deg, #6e48aa, #9d50bb);
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .btn-purple:hover {
+            background: linear-gradient(45deg, #9d50bb, #6e48aa);
+            color: white;
+            box-shadow: 0 0 15px rgba(157, 80, 187, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-purple sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 gradient-text" href="#">My Webpage Gallery</a>
+            <div class="dropdown">
+                <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Categories
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark border-secondary">
+                    <li><a class="dropdown-item" href="#">Neon Art</a></li>
+                    <li><a class="dropdown-item" href="#">Abstract</a></li>
+                    <li><a class="dropdown-item" href="#">Photography</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container text-center py-5">
+        <h1 class="display-3 fw-bold gradient-text">Purple Gallery</h1>
+        <p class="text-white-50 lead">Discover Stunning Puple Inspired Visuals.</p>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card purple-card h-100 text-white">
+                    <img src="https://i.pinimg.com/736x/ce/35/a4/ce35a49c32ea9b7f42dd3516b8b368d8.jpg"
+                        class="card-img-top gallery-img" alt="Purple 1">
+                    <div class="card-body">
+                        <h5 class="card-title h6">Motivation</h5>
+                        <span class="badge rounded-pill bg-dark border">New Release</span>
+                        <button class="btn btn-purple btn-sm w-100 mt-3" data-bs-toggle="offcanvas"
+                            data-bs-target="#imageInfo">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card purple-card h-100 text-white"><img
+                        src="https://i.pinimg.com/1200x/47/c1/7d/47c17dd01327e1b3e80af1f338addb3d.jpg"
+                        class="card-img-top gallery-img">
+                    <div class="card-body">
+                        <h6>Travel Places</h6><span class="badge rounded-pill bg-dark border">Popular</span><button
+                            class="btn btn-purple btn-sm w-100 mt-3">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card purple-card h-100 text-white"><img
+                        src="https://i.pinimg.com/736x/e2/96/08/e29608332662c6a884f59b72d8dca664.jpg"
+                        class="card-img-top gallery-img">
+                    <div class="card-body">
+                        <h6>Lovely Landscapes</h6><span class="badge rounded-pill bg-dark border">Abstract</span><button
+                            class="btn btn-purple btn-sm w-100 mt-3">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card purple-card h-100 text-white"><img
+                        src="https://i.pinimg.com/1200x/ff/f0/ad/fff0ad46c39e681ef6079f871f43a927.jpg"
+                        class="card-img-top gallery-img">
+                    <div class="card-body">
+                        <h6>Nature Escapes</h6><span class="badge rounded-pill bg-dark border">Trending</span><button
+                            class="btn btn-purple btn-sm w-100 mt-3">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card purple-card h-100 text-white"><img
+                        src="https://i.pinimg.com/1200x/18/9b/6e/189b6ec02d0d35d13ec4b4d278ef8c82.jpg"
+                        class="card-img-top gallery-img">
+                    <div class="card-body">
+                        <h6>Hidden Paradise</h6><span class="badge rounded-pill bg-dark border">Digital</span><button
+                            class="btn btn-purple btn-sm w-100 mt-3">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card purple-card h-100 text-white"><img
+                        src="https://i.pinimg.com/1200x/ad/c6/17/adc6172a50d75ff5847ee7edbfe02679.jpg"
+                        class="card-img-top gallery-img">
+                    <div class="card-body">
+                        <h6>Beautiful Sky</h6><span class="badge rounded-pill bg-dark border">Nature</span><button
+                            class="btn btn-purple btn-sm w-100 mt-3">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card purple-card h-100 text-white"><img
+                        src="https://i.pinimg.com/736x/22/dd/98/22dd98e0af063c6871c6f5e0183b3ad8.jpg"
+                        class="card-img-top gallery-img">
+                    <div class="card-body">
+                        <h6>Peaceful Place</h6><span class="badge rounded-pill bg-dark border">Minimal</span><button
+                            class="btn btn-purple btn-sm w-100 mt-3">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card purple-card h-100 text-white"><img
+                        src="https://i.pinimg.com/1200x/b2/85/cb/b285cb02d97db019c43450d9c6c7bcc9.jpg"
+                        class="card-img-top gallery-img">
+                    <div class="card-body">
+                        <h6>Chill Places</h6><span class="badge rounded-pill bg-dark border">Vibrant</span><button
+                            class="btn btn-purple btn-sm w-100 mt-3">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="imageInfo">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title gradient-text">Artwork Specifications</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Artist: Violet Digital Studio</p>
+            <p>Year: 2026</p>
+            <p class="text-secondary small">This piece is represent the harmony between the digital and the ethereal.
+            </p>
+        </div>
+    </div>
+
+    <footer class="text-center py-5 opacity-75">
+        <p>© 2026 Purple Gallery | Created with Bootstrap</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
